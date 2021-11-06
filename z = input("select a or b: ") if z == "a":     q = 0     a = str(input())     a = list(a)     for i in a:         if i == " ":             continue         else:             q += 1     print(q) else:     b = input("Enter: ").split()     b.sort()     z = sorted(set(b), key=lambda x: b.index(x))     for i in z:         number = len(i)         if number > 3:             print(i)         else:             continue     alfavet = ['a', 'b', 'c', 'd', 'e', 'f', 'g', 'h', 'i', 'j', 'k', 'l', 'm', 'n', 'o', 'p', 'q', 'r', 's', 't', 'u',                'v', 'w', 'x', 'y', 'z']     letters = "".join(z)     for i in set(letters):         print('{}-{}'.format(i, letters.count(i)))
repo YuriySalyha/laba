@@ -1,0 +1,16 @@
+z = input("select a or b: ")
+if z == "a":
+    q = 0
+    a = str(input())
+    a = list(a)
+    for i in a:
+        if i == " ":
+            continue
+        else:
+            q += 1
+    print(q)
+elif z =='b':
+    b = input("Enter: ").split()
+    b.sort()
+    z = sorted(set(b), key=lambda x: b.index(x))
+    print(z)
